@@ -6,9 +6,9 @@ function Sidebar() {
     const sidebarCollapsed = localStorage.getItem('sidebar-collapsed');
     const [isExpanded, setIsExpanded] = useState(sidebarCollapsed ? false : true);
     const handleToggler = () => {
-        if(isExpanded) {
+        if (isExpanded) {
             setIsExpanded(false);
-            localStorage.setItem('sidebar-collapsed',true);
+            localStorage.setItem('sidebar-collapsed', true);
             return;
         }
         setIsExpanded(true);
